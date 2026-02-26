@@ -1,0 +1,303 @@
+{
+  "product": "calculator",
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "Fill discovery: vision.md",
+      "passes": true,
+      "files": [
+        "phases/01-discovery/vision.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Summarize from brainstorm: basic arithmetic calculator website, portfolio piece, glassmorphism design, vanilla HTML/CSS/JS",
+      "depends_on": [],
+      "plan_section": "Discovery"
+    },
+    {
+      "id": "T02",
+      "title": "Fill discovery: customer-research.md",
+      "passes": true,
+      "files": [
+        "phases/01-discovery/customer-research.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Segments: hiring managers reviewing portfolios, developers looking for inspiration",
+      "depends_on": [],
+      "plan_section": "Discovery"
+    },
+    {
+      "id": "T03",
+      "title": "Fill discovery: competitive-analysis.md",
+      "passes": true,
+      "files": [
+        "phases/01-discovery/competitive-analysis.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "3 competitors: Google Calculator, calculator.net, Apple iOS calculator web clones",
+      "depends_on": [],
+      "plan_section": "Discovery"
+    },
+    {
+      "id": "T04",
+      "title": "Discovery gate check and advance",
+      "passes": true,
+      "files": [
+        "phases/01-discovery/GATE-CHECK.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Mark all gate checks [x], run dev advance calculator",
+      "depends_on": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "plan_section": "Discovery"
+    },
+    {
+      "id": "T05",
+      "title": "Fill definition: PRD",
+      "passes": true,
+      "files": [
+        "phases/02-definition/prd.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Goals, non-goals, 5 user stories, functional requirements from brainstorm",
+      "depends_on": [
+        "T04"
+      ],
+      "plan_section": "Definition"
+    },
+    {
+      "id": "T06",
+      "title": "Fill definition: user-stories.md",
+      "passes": true,
+      "files": [
+        "phases/02-definition/user-stories.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Detailed user stories with acceptance criteria",
+      "depends_on": [
+        "T04"
+      ],
+      "plan_section": "Definition"
+    },
+    {
+      "id": "T07",
+      "title": "Fill definition: success-metrics.md",
+      "passes": true,
+      "files": [
+        "phases/02-definition/success-metrics.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Portfolio metrics: GitHub stars, recruiter clicks, Lighthouse score",
+      "depends_on": [
+        "T04"
+      ],
+      "plan_section": "Definition"
+    },
+    {
+      "id": "T08",
+      "title": "Definition gate check and advance",
+      "passes": true,
+      "files": [
+        "phases/02-definition/GATE-CHECK.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Mark all gate checks [x], run dev advance calculator",
+      "depends_on": [
+        "T05",
+        "T06",
+        "T07"
+      ],
+      "plan_section": "Definition"
+    },
+    {
+      "id": "T09",
+      "title": "Fill architecture: system-design.md",
+      "passes": true,
+      "files": [
+        "phases/03-architecture/system-design.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "3-file architecture: index.html, style.css, script.js. No server.",
+      "depends_on": [
+        "T08"
+      ],
+      "plan_section": "Architecture"
+    },
+    {
+      "id": "T10",
+      "title": "Fill architecture: tech-stack.md",
+      "passes": true,
+      "files": [
+        "phases/03-architecture/tech-stack.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Vanilla HTML/CSS/JS, no framework, no build step",
+      "depends_on": [
+        "T08"
+      ],
+      "plan_section": "Architecture"
+    },
+    {
+      "id": "T11",
+      "title": "Fill architecture: data-model.md",
+      "passes": true,
+      "files": [
+        "phases/03-architecture/data-model.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Calculator state: currentOperand, previousOperand, operation, shouldResetDisplay",
+      "depends_on": [
+        "T08"
+      ],
+      "plan_section": "Architecture"
+    },
+    {
+      "id": "T12",
+      "title": "Fill architecture: api-design.md",
+      "passes": true,
+      "files": [
+        "phases/03-architecture/api-design.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "JS functions: appendNumber, chooseOperation, compute, clear, deleteDigit, toggleSign, percentage",
+      "depends_on": [
+        "T08"
+      ],
+      "plan_section": "Architecture"
+    },
+    {
+      "id": "T13",
+      "title": "Fill architecture: roadmap.md",
+      "passes": true,
+      "files": [
+        "phases/03-architecture/roadmap.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "MVP: basic calc. V1: history, themes. V2: scientific mode.",
+      "depends_on": [
+        "T08"
+      ],
+      "plan_section": "Architecture"
+    },
+    {
+      "id": "T14",
+      "title": "Architecture gate check and advance",
+      "passes": true,
+      "files": [
+        "phases/03-architecture/GATE-CHECK.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Mark all gate checks [x], run dev advance calculator",
+      "depends_on": [
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13"
+      ],
+      "plan_section": "Architecture"
+    },
+    {
+      "id": "T15",
+      "title": "Build: index.html",
+      "passes": true,
+      "files": [
+        "src/index.html"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Semantic HTML, calculator grid layout, display area, all buttons. Link style.css and script.js.",
+      "depends_on": [
+        "T14"
+      ],
+      "plan_section": "Build"
+    },
+    {
+      "id": "T16",
+      "title": "Build: style.css",
+      "passes": true,
+      "files": [
+        "src/style.css"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Glassmorphism: backdrop-filter blur, semi-transparent backgrounds, soft shadows, gradient background. CSS Grid for buttons. Responsive. Button press animations.",
+      "depends_on": [
+        "T14"
+      ],
+      "plan_section": "Build"
+    },
+    {
+      "id": "T17",
+      "title": "Build: script.js",
+      "passes": true,
+      "files": [
+        "src/script.js"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Calculator class/module: state management, operations, display update, keyboard event listeners. Handle edge cases: divide by zero, chained operations, decimal point.",
+      "depends_on": [
+        "T14"
+      ],
+      "plan_section": "Build"
+    },
+    {
+      "id": "T18",
+      "title": "Test and fix edge cases",
+      "passes": true,
+      "files": [
+        "src/script.js"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "Divide by zero, multiple decimals, chained operations (2+3*4), display overflow, negative numbers",
+      "depends_on": [
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "plan_section": "Build"
+    },
+    {
+      "id": "T19",
+      "title": "Lint and final polish",
+      "passes": true,
+      "files": [
+        "src/index.html",
+        "src/style.css",
+        "src/script.js"
+      ],
+      "estimated_files_touched": 3,
+      "context_hints": "Validate HTML, check CSS for browser compat, lint JS",
+      "depends_on": [
+        "T18"
+      ],
+      "plan_section": "Build"
+    },
+    {
+      "id": "T20",
+      "title": "Git init, commit, build gate check",
+      "passes": true,
+      "files": [
+        "phases/04-build/GATE-CHECK.md"
+      ],
+      "estimated_files_touched": 1,
+      "context_hints": "git init, git add, commit. Mark build gate checks. No README needed for now.",
+      "depends_on": [
+        "T19"
+      ],
+      "plan_section": "Build"
+    },
+    {
+      "id": "T21",
+      "title": "Push branch and create PR",
+      "passes": false,
+      "files": [],
+      "estimated_files_touched": 0,
+      "context_hints": "git push -u origin feat/calculator-website, gh pr create with summary and screenshots",
+      "depends_on": [
+        "T20"
+      ],
+      "plan_section": "Ship"
+    }
+  ]
+}
