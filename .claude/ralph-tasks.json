@@ -1,0 +1,26 @@
+[
+  {
+    "id": "DISC-1",
+    "title": "Complete vision statement",
+    "description": "Fill in phases/01-discovery/vision.md with problem, target user, value proposition",
+    "passes": true
+  },
+  {
+    "id": "DISC-2",
+    "title": "Complete customer research",
+    "description": "Fill in phases/01-discovery/customer-research.md with at least 2 segments",
+    "passes": true
+  },
+  {
+    "id": "DISC-3",
+    "title": "Complete competitive analysis",
+    "description": "Fill in phases/01-discovery/competitive-analysis.md with 3+ competitors and differentiation",
+    "passes": true
+  },
+  {
+    "id": "DISC-4",
+    "title": "Pass all gate checks",
+    "description": "Verify all discovery phase gate checks pass",
+    "passes": true
+  }
+]
